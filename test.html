@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>External Page Example</title>
+    <style>
+      html, body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      #external-page-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      #external-page {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="external-page-container">
+      <iframe id="external-page"></iframe>
+    </div>
+
+    <script>
+      var externalPageUrl = "https://totallyscience.co";
+      var externalPage = document.getElementById("external-page");
+      externalPage.src = externalPageUrl;
+    </script>
+  </body>
+</html>
